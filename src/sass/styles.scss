@@ -96,6 +96,9 @@ h6 {
   grid-gap: 20px;
   button {
     padding: 0;
+    &:hover {
+      cursor: pointer;
+    }
   }
   img {
     width: 100%;
@@ -161,9 +164,18 @@ h6 {
     color: $dkOrange;
     font-family: $fancyFont;
     transform: rotate(90deg);
-    p:hover {
+    &:hover {
       text-decoration: none;
-
+      cursor: pointer;
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $dkOrange;;
 }
