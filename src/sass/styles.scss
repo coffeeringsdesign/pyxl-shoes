@@ -44,15 +44,48 @@ h1 {
   overflow: hidden;
 }
 
+h3 {
+  font-family: $fancyFont;
+  color: $mdGrey;
+  font-size: 300px;
+  overflow: hidden;
+}
+
+#blah {
+  background-color: green;
+}
+
 h2 {
   font-family: $fancyFont;
   color: $dkOrange;
   font-size: 200px;
   overflow: hidden;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   position: absolute;
   top: 230px;
   left: 0;
+}
+
+h6 {
+  color: $mdGrey;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+#arrow{
+    transform: rotate(90deg);
+    top: 50px;
+    left: 30px;
+    position: absolute;
+    font-size: 200px;
+    letter-spacing: -94px;
+    overflow: visible;
+    a {
+      text-decoration: none;
+      padding-right: 100px;
+      color: $mdGrey;
+    }
 }
 
 .shoesGrid {
@@ -61,13 +94,41 @@ h2 {
   // background: grey;
   grid-template: auto / auto auto;
   grid-gap: 20px;
-
+  button {
+    padding: 0;
+  }
   img {
     width: 100%;
   }
 }
 
-.overlay {
+.menuContainer {
+  display: flex;
+  border: 45px solid $mdGrey;
+  box-sizing: border-box;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    width: 100%
+  }
+  @media screen and (max-width: 1230px) {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin: 20px auto;
+
+  }
+}
+
+#overlay {
   display: none;
   z-index: 3;
   position: fixed;
@@ -77,15 +138,32 @@ h2 {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
-  .close-overlay {
+  justify-content: center;
+  align-items: center;
+  #imageHolder {
+    width: 80%;
+    max-height: 90%;
+    max-width: 1600px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    img {
+      width: 100%;
+    }
+  }
+  #closeoverlay {
     position: absolute;
     right: 15px;
     top: 15px;
-    color: white;
     font-size: 40pt;
     padding: 10px;
-    a:hover {
+    color: $dkOrange;
+    font-family: $fancyFont;
+    transform: rotate(90deg);
+    p:hover {
       text-decoration: none;
+
     }
   }
 }
