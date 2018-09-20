@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 
@@ -24,8 +25,32 @@ module.exports = {
             "css-loader",
             "sass-loader"
         ]
-      }
-
+      },
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/'
+            }
+          }
+        ]
+      },
+      {
+            test: /\.html$/,
+            loader: 'html-srcsets-loader',
+            options: {
+                attrs: ['img:src', ':srcset'],
+                minimize: true,
+                caseSensitive: true,
+                removeAttributeQuotes:false,
+                minifyJS:false,
+                minifyCSS:false
+            },
+            exclude: ['./src/main/webapp/index.html']
+        }
     ]
   },
 
@@ -34,7 +59,8 @@ module.exports = {
       inject: 'body',
       template: './src/index.html',
       filename: 'index.html'
-    })
+    }),
+    new UglifyJsPlugin(),
   ]
 
 };
