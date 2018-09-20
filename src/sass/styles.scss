@@ -1,0 +1,59 @@
+$fancyFont: 'Stalinist One', cursive;
+$mdGrey: #273746;
+$dkOrange: #D14D31;
+$dkGrey: #17202A;
+
+* {
+  border: solid $dkGrey 5px;
+  margin: 0 0;
+}
+
+body {
+  background-color: black;
+}
+
+.mainContainer {
+  position: relative;
+}
+
+.shoesContainer {
+  width: 500px;
+  margin: -60% auto 0 auto;
+  z-index: 2;
+  position: relative;
+  left: 13%;
+}
+
+.titleContainer {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: $fancyFont;
+  color: $mdGrey;
+  font-size: 800px;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: $fancyFont;
+  color: $dkOrange;
+  font-size: 200px;
+  overflow: hidden;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 200px;
+  left: 0;
+  text-align: right;
+}
+
+.shoesGrid {
+  display: grid;
+  grid-template: auto / auto auto;
+  grid-gap: 10px;
+
+  img {
+    width: 300px;
+  }
+}
