@@ -1,7 +1,7 @@
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 
@@ -61,25 +61,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-<<<<<<< HEAD
     new UglifyJsPlugin(),
 
     new CleanWebpackPlugin(['dist'])
-=======
-    new HtmlWebpackPlugin({
-      template: './src/blog.html',
-      filename: 'blog.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/press.html',
-      filename: 'press.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/company.html',
-      filename: 'company.html'
-    }),
-    new UglifyJsPlugin(),
->>>>>>> ee28368fbad633c52e01281b6dc5fc7e3882cee5
+
   ]
 
 };
