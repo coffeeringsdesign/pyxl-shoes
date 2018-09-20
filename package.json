@@ -1,28 +1,35 @@
 {
-  "name": "indie-game",
+  "name": "blank",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coffeeringsdesign/blank.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "html-srcsets-loader": "^0.5.1"
+  "bugs": {
+    "url": "https://github.com/coffeeringsdesign/blank/issues"
   },
+  "homepage": "https://github.com/coffeeringsdesign/blank#readme",
   "devDependencies": {
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.9",
-    "webpack-dev-server": "^3.1.0"
-  },
+    "uglifyjs-webpack-plugin": "^1.2.2",
+     "css-loader": "^1.0.0",
+     "file-loader": "^2.0.0",
+     "html-loader": "^0.5.5",
+     "html-webpack-plugin": "^3.2.0",
+     "node-sass": "^4.9.3",
+     "sass-loader": "^7.1.0",
+     "style-loader": "^0.23.0",
+     "webpack": "^4.0.1",
+     "webpack-cli": "^2.0.9",
+     "webpack-dev-server": "^3.1.0"
+  }
 }

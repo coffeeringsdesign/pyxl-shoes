@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 
@@ -61,6 +62,8 @@ module.exports = {
       filename: 'index.html'
     }),
     new UglifyJsPlugin(),
+
+    new CleanWebpackPlugin(['dist'])   
   ]
 
 };
