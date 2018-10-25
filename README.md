@@ -35,8 +35,8 @@ Using Command Line:
 
 Large Screen Screenshots | Mobile Screenshots
 ---------------------- | -----------------------
-![Web Screenshot](1.jpg) | ![Mobile Screenshot](3.jpg)
-![Web Screenshot](2.jpg) | ![Mobile Screenshot](4.jpg)
+![Web Screenshot](1.png) | ![Mobile Screenshot](3.png)
+![Web Screenshot](2.png) | ![Mobile Screenshot](4.png)
 
 ## Support and contact details
 
