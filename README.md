@@ -33,10 +33,10 @@ Using Command Line:
 
 ## Final Screen Shots
 
-![User Profile 1](src/assets/img/1.jpg) | ![User Profile 2](src/assets/img/2.jpg)
+Large Screen Screenshots | Mobile Screenshots
 ---------------------- | -----------------------
-![User Profile 3](src/assets/img/3.jpg) | ![User Profile 4](src/assets/img/4.jpg)
-![User Profile 5](src/assets/img/5.jpg) |
+![Web Screenshot](1.jpg) | ![Mobile Screenshot](3.jpg)
+![Web Screenshot](2.jpg) | ![Mobile Screenshot](4.jpg)
 
 ## Support and contact details
 
